@@ -111,12 +111,12 @@ const App = () => {
           <div>
             <div>
               <div>
-                <div>Full-Time</div>
-                <h3>Senior React Devloper</h3>
+                <div>Remote</div>
+                <h3>Front-End Engineer (React)</h3>
               </div>
 
               <div>
-                We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript...
+              Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion...
               </div>
 
               <h3>$70 - $80K / Year</h3>
@@ -126,7 +126,7 @@ const App = () => {
               <div>
                 <div>
                   <i></i>
-                  Boston, MA
+                  Miami, FL
                 </div>
                 <a>
                   Read More
@@ -139,12 +139,12 @@ const App = () => {
           <div>
             <div>
               <div>
-                <div>Full-Time</div>
-                <h3>Senior React Devloper</h3>
+                <div>Remote</div>
+                <h3>React.js Developer</h3>
               </div>
 
               <div>
-                We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript...
+              Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference...
               </div>
 
               <h3>$70 - $80K / Year</h3>
@@ -154,7 +154,7 @@ const App = () => {
               <div>
                 <div>
                   <i></i>
-                  Boston, MA
+                  Brooklyn, NY
                 </div>
                 <a>
                   Read More
@@ -167,7 +167,9 @@ const App = () => {
      </section>
 
      {/* FOOTER */}
-
+      <section>
+        <a>View All Jobs</a>
+      </section>
     </>
   )
 };
