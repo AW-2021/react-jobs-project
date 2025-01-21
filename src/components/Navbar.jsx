@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className='flex h-20 items-center justify-between'>
           <div className='flex flex-1 items-center justify-center md:items-stretch md:justify-start'>
             {/* LOGO */}
-            <a href='/index.html' className='flex flex-shrink-0 items-center mr-4'>
+            <a href='/' className='flex flex-shrink-0 items-center mr-4'>
               <img 
                 src={logo} 
                 alt="React Jobs logo"
@@ -17,15 +17,15 @@ const Navbar = () => {
             </a>
             <div className='md:ml-auto'>
               <div className='flex space-x-2 text-white'>
-                <a href="/index.html"
+                <a href="/"
                   className='bg-black hover:bg-gray-900 rounded-md px-3 py-2'>
                   Home
                 </a>
-                <a href="/jobs.html"
+                <a href="/jobs"
                   className='hover:bg-gray-900 rounded-md px-3 py-2'>
                   Jobs
                 </a>
-                <a href="/add-job.html"
+                <a href="/add-job"
                   className='hover:bg-gray-900 rounded-md px-3 py-2'>
                   Add Job
                 </a>
