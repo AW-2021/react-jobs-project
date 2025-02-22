@@ -5,10 +5,10 @@ import JobListing from "../components/JobListing";
 
 const JobPage = () => {
   const { id } = useParams();
-  const [job, setJob] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // const [job, setJob] = useState(null);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const fetchJob = async () => {
        try {
         const res = await fetch(`/api/jobs/${id}`);
@@ -22,9 +22,15 @@ const JobPage = () => {
       }
     }
     fetchJob();
-  }, []);
+  }, []); */
 
   return loading ? <Spinner /> : ( <JobListing job={job} /> );
 }
 
-export default JobPage;
+const jobLoader = async ({ params }) => {
+  const res = await fetch(`/api/jobs/${params.id}`);
+  const data = await res.json();
+  return data;
+}
+
+export { JobPage as default, jobLoader };
