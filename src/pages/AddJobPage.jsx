@@ -7,7 +7,7 @@ const AddJobPage = () => {
             <h2 className="text-3xl text-center font-semibold mb-6">Add Job</h2>
 
             <div className="mb-4">
-              <label for="type" className="block text-gray-700 font-bold mb-2">
+              <label htmlFor="type" className="block text-gray-700 font-bold mb-2">
                 Job Type
               </label>
               <select
@@ -24,7 +24,7 @@ const AddJobPage = () => {
             </div>
 
             <div className="mb-4">
-              <label for="title" className="block text-gray-700 font-bold mb-2">
+              <label htmlFor="title" className="block text-gray-700 font-bold mb-2">
                 Job Listing Name
               </label>
               <input
@@ -39,7 +39,7 @@ const AddJobPage = () => {
 
             <div className="mb-4">
               <label
-                for="description"
+                htmlFor="description"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Description
@@ -55,7 +55,7 @@ const AddJobPage = () => {
 
             <div className="mb-4">
               <label
-                for="salary"
+                htmlFor="salary"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Salary
@@ -82,7 +82,7 @@ const AddJobPage = () => {
 
             <div className="mb-4">
               <label
-                for="location"
+                htmlFor="location"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Location
@@ -101,7 +101,7 @@ const AddJobPage = () => {
 
             <div className="mb-4">
               <label
-                for="company"
+                htmlFor="company"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Company Name
@@ -117,7 +117,7 @@ const AddJobPage = () => {
 
             <div className="mb-4">
               <label
-                for="company_description"
+                htmlFor="company_description"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Company Description
@@ -133,7 +133,7 @@ const AddJobPage = () => {
 
             <div className="mb-4">
               <label
-                for="contact_email"
+                htmlFor="contact_email"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Contact Email
@@ -150,7 +150,7 @@ const AddJobPage = () => {
 
             <div className="mb-4">
               <label
-                for="contact_phone"
+                htmlFor="contact_phone"
                 className="block text-gray-700 font-bold mb-2"
               >
                 Contact Phone
