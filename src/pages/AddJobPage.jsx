@@ -30,8 +30,6 @@ const AddJobPage = ({ addJobSubmit }) => {
           contactPhone
         }
       }
-      // console.log(newJob);
-
       addJobSubmit(newJob);
 
       return navigate('/jobs');
