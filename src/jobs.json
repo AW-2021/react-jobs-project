@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "a4e3",
+      "title": "Front-End Intern",
+      "type": "Internship",
+      "location": "Chicago, CH",
+      "description": "Web Development Internship in Chicago for 2 months.",
+      "salary": "Under $50K",
+      "company": {
+        "name": "WeWorkWeb",
+        "description": "We build web applications and software solutions for clients.",
+        "contactEmail": "weworkweb@gmail.com",
+        "contactPhone": "0123-456-7892"
+      }
     }
   ]
 }
