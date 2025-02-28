@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const AddJobPage = ({ addJobSubmit }) => {
     const [title, setTitle] = useState('');
@@ -31,6 +32,7 @@ const AddJobPage = ({ addJobSubmit }) => {
         }
       }
       addJobSubmit(newJob);
+      toast.success('Job added successfully!');
 
       return navigate('/jobs');
     }
@@ -76,7 +78,7 @@ const AddJobPage = ({ addJobSubmit }) => {
                 id="title"
                 name="title"
                 className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="eg. Beautiful Apartment in New York"
+                placeholder="eg. Full-Stack Web Developer"
                 required
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
