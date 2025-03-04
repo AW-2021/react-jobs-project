@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
-const EditJobPage = () => {
+const EditJobPage = ({ updateJobSubmit }) => {
   const job = useLoaderData();
 
   const [title, setTitle] = useState(job.title);
@@ -14,10 +15,13 @@ const EditJobPage = () => {
   const [contactEmail, setContactEmail] = useState(job.company.contactEmail);
   const [contactPhone, setContactPhone] = useState(job.company.contactPhone);
 
+  const navigate = useNavigate();
+
   const submitForm = (e) => {
     e.preventDefault();
 
     const updatedJob = {
+      id: job.id,
       title,
       type,
       location,
@@ -30,10 +34,10 @@ const EditJobPage = () => {
         contactPhone,
       },
     };
-    // addJobSubmit(updatedJob);
-    toast.success("Job edited successfully!");
+    updateJobSubmit(updatedJob);
+    toast.success("Job Updated Successfully!");
 
-    return navigate("/jobs");
+    return navigate(`/jobs/${job.id}`);
   };
 
   return (
@@ -41,7 +45,7 @@ const EditJobPage = () => {
       <div className="container m-auto max-w-2xl py-24">
         <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
           <form onSubmit={submitForm}>
-            <h2 className="text-3xl text-center font-semibold mb-6">Add Job</h2>
+            <h2 className="text-3xl text-center font-semibold mb-6">Update Job</h2>
 
             <div className="mb-4">
               <label
@@ -230,7 +234,7 @@ const EditJobPage = () => {
                 className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Add Job
+                Update Job
               </button>
             </div>
           </form>
